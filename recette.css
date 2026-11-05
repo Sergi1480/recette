@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to right, #000000, #333333);
+    color: white;
+    font-family:'Wathenda Signature 2', cursive;
+   
+}
+
+
+h1 {
+    background: linear-gradient(90deg, rgb(0, 255, 242), silver, rgb(0, 247, 255));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    font-family: Arial, sans-serif;
+    text-align: left;
+
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.contenu {
+    padding: 20px;
+    margin: 20px;
+}
+
+.carousel {
+margin: auto; 
+   max-width: 800px;
+   flex-grow: 0;
+   flex-basis: 700px;
+   flex-shrink: 1;
+}
+
+.d-block.w-100 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.layout {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+}
+
+.carousel-caption {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    background-size: 200%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#btn-commander {
+    background-color: rgb(80, 170, 255);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+      margin: 0 auto; 
+      display: block;
+}
+
+#btn-commander:hover {
+    background-color: black;
+    color: rgb(0, 238, 255);
+    background: linear-gradient(to right, rgb(0, 225, 255), silver, rgb(0, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation : shine 4s linear infinite; 
+}
+    @keyframes shine {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 200%;
+        }
+    }
+
+   
